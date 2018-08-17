@@ -15,6 +15,8 @@
 		7B324AFA21266CE5003372C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324AF921266CE5003372C1 /* main.m */; };
 		7B324B0421266CE5003372C1 /* PackageComponentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B0321266CE5003372C1 /* PackageComponentTests.m */; };
 		7B324B0F21266CE5003372C1 /* PackageComponentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B0E21266CE5003372C1 /* PackageComponentUITests.m */; };
+		7B324B2021266DF2003372C1 /* SuccessErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B1F21266DF2003372C1 /* SuccessErrorView.m */; };
+		7B324B242126B06D003372C1 /* UIView+GestureCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B232126B06D003372C1 /* UIView+GestureCallBack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		7B324B0A21266CE5003372C1 /* PackageComponentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackageComponentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B324B0E21266CE5003372C1 /* PackageComponentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PackageComponentUITests.m; sourceTree = "<group>"; };
 		7B324B1021266CE5003372C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B324B1E21266DF2003372C1 /* SuccessErrorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuccessErrorView.h; sourceTree = "<group>"; };
+		7B324B1F21266DF2003372C1 /* SuccessErrorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuccessErrorView.m; sourceTree = "<group>"; };
+		7B324B222126B06D003372C1 /* UIView+GestureCallBack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureCallBack.h"; sourceTree = "<group>"; };
+		7B324B232126B06D003372C1 /* UIView+GestureCallBack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureCallBack.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		7B324AE921266CE4003372C1 /* PackageComponent */ = {
 			isa = PBXGroup;
 			children = (
+				7B324B1C21266D33003372C1 /* 自定义错误视图 */,
 				7B324AEA21266CE4003372C1 /* AppDelegate.h */,
 				7B324AEB21266CE4003372C1 /* AppDelegate.m */,
 				7B324AED21266CE4003372C1 /* ViewController.h */,
@@ -130,6 +137,33 @@
 				7B324B1021266CE5003372C1 /* Info.plist */,
 			);
 			path = PackageComponentUITests;
+			sourceTree = "<group>";
+		};
+		7B324B1C21266D33003372C1 /* 自定义错误视图 */ = {
+			isa = PBXGroup;
+			children = (
+				7B324B212126B02A003372C1 /* GestureBack */,
+				7B324B1D21266D6A003372C1 /* SuccessOrEroorView */,
+			);
+			path = "自定义错误视图";
+			sourceTree = "<group>";
+		};
+		7B324B1D21266D6A003372C1 /* SuccessOrEroorView */ = {
+			isa = PBXGroup;
+			children = (
+				7B324B1E21266DF2003372C1 /* SuccessErrorView.h */,
+				7B324B1F21266DF2003372C1 /* SuccessErrorView.m */,
+			);
+			path = SuccessOrEroorView;
+			sourceTree = "<group>";
+		};
+		7B324B212126B02A003372C1 /* GestureBack */ = {
+			isa = PBXGroup;
+			children = (
+				7B324B222126B06D003372C1 /* UIView+GestureCallBack.h */,
+				7B324B232126B06D003372C1 /* UIView+GestureCallBack.m */,
+			);
+			path = GestureBack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +298,9 @@
 			files = (
 				7B324AEF21266CE4003372C1 /* ViewController.m in Sources */,
 				7B324AFA21266CE5003372C1 /* main.m in Sources */,
+				7B324B242126B06D003372C1 /* UIView+GestureCallBack.m in Sources */,
 				7B324AEC21266CE4003372C1 /* AppDelegate.m in Sources */,
+				7B324B2021266DF2003372C1 /* SuccessErrorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
