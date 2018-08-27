@@ -19,9 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
    //成功或失败视图的展示
-    //[self successErrorView];
+    [self successErrorView];
     //利用runtime手势点击
-    [self gestureTap];
+    //[self gestureTap];
     
 }
 #pragma mark --手势点击事件
