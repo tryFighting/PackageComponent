@@ -1,0 +1,37 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - LazyScroll (1.0.0):
+    - TMUtils (~> 1.0)
+  - TMUtils (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.2.0)
+  - FMDB (~> 2.7.2)
+  - LazyScroll (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  LazyScroll: ff021cf69b5b53c7dac7d65a79ee775175bcc624
+  TMUtils: 2b8964a5ff58183b9bf3cbdf64f89b2e4b2c498d
+
+PODFILE CHECKSUM: 98ba6c6b32f84faf6f76b7efb2d7898c12cdfa19
+
+COCOAPODS: 1.4.0
