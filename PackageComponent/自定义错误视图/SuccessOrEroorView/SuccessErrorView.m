@@ -19,6 +19,24 @@
 @property(nonatomic,copy)void(^reloadBlock)(UIButton *sender);
 @end
 @implementation SuccessErrorView
+/*
+ UIView的layer树在系统内部，被维护着三份copy,分别是逻辑树，动画树，显示树
+ 
+ */
+- (void)setNeedsDisplay{
+    //需要重新显示绘制，需要自动调用drawRect方法，拿到当前上下文就可以画画了
+    
+}
+- (void)drawRect:(CGRect)rect{
+    
+}
+- (void)setNeedsLayout{
+    //会重新布局
+    //默认会调用layoutSubViews
+}
+- (void)layoutSubviews{
+    //刷新界面
+}
 - (void)configWithType:(BlankViewType)blankType hasData:(BOOL)hasData hasError:(BOOL)hasError reloadButtonBlock:(void (^)(UIButton *))block{
     if (hasData) {
         [self removeFromSuperview];
