@@ -17,6 +17,8 @@
 		7B324B0F21266CE5003372C1 /* PackageComponentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B0E21266CE5003372C1 /* PackageComponentUITests.m */; };
 		7B324B2021266DF2003372C1 /* SuccessErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B1F21266DF2003372C1 /* SuccessErrorView.m */; };
 		7B324B242126B06D003372C1 /* UIView+GestureCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B232126B06D003372C1 /* UIView+GestureCallBack.m */; };
+		7B4782D12136330900F9125F /* LoopQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4782D02136330900F9125F /* LoopQueue.m */; };
+		7B7158912137D47B00620E5F /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7158902137D47B00620E5F /* Algorithm.m */; };
 		C3581BD3A42B015BC4885084 /* libPods-PackageComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B92ACDC85B2A060BA82847 /* libPods-PackageComponent.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,10 @@
 		7B324B1F21266DF2003372C1 /* SuccessErrorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuccessErrorView.m; sourceTree = "<group>"; };
 		7B324B222126B06D003372C1 /* UIView+GestureCallBack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureCallBack.h"; sourceTree = "<group>"; };
 		7B324B232126B06D003372C1 /* UIView+GestureCallBack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureCallBack.m"; sourceTree = "<group>"; };
+		7B4782CF2136330900F9125F /* LoopQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopQueue.h; sourceTree = "<group>"; };
+		7B4782D02136330900F9125F /* LoopQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopQueue.m; sourceTree = "<group>"; };
+		7B71588F2137D47B00620E5F /* Algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		7B7158902137D47B00620E5F /* Algorithm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,8 @@
 		7B324B1C21266D33003372C1 /* 自定义错误视图 */ = {
 			isa = PBXGroup;
 			children = (
+				7B71588E2137D43A00620E5F /* AI_算法 */,
+				7B4782CE213632E400F9125F /* LoopQueue_循环队列 */,
 				7B324B212126B02A003372C1 /* GestureBack */,
 				7B324B1D21266D6A003372C1 /* SuccessOrEroorView */,
 			);
@@ -180,6 +188,24 @@
 				7B324B232126B06D003372C1 /* UIView+GestureCallBack.m */,
 			);
 			path = GestureBack;
+			sourceTree = "<group>";
+		};
+		7B4782CE213632E400F9125F /* LoopQueue_循环队列 */ = {
+			isa = PBXGroup;
+			children = (
+				7B4782CF2136330900F9125F /* LoopQueue.h */,
+				7B4782D02136330900F9125F /* LoopQueue.m */,
+			);
+			path = "LoopQueue_循环队列";
+			sourceTree = "<group>";
+		};
+		7B71588E2137D43A00620E5F /* AI_算法 */ = {
+			isa = PBXGroup;
+			children = (
+				7B71588F2137D47B00620E5F /* Algorithm.h */,
+				7B7158902137D47B00620E5F /* Algorithm.m */,
+			);
+			path = "AI_算法";
 			sourceTree = "<group>";
 		};
 		FEC46E8E52B90514A1E8D48A /* Frameworks */ = {
@@ -377,8 +403,10 @@
 				7B324AEF21266CE4003372C1 /* ViewController.m in Sources */,
 				7B324AFA21266CE5003372C1 /* main.m in Sources */,
 				7B324B242126B06D003372C1 /* UIView+GestureCallBack.m in Sources */,
+				7B4782D12136330900F9125F /* LoopQueue.m in Sources */,
 				7B324AEC21266CE4003372C1 /* AppDelegate.m in Sources */,
 				7B324B2021266DF2003372C1 /* SuccessErrorView.m in Sources */,
+				7B7158912137D47B00620E5F /* Algorithm.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +579,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
 				INFOPLIST_FILE = PackageComponent/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = md.PackageComponent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,7 +597,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
 				INFOPLIST_FILE = PackageComponent/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = md.PackageComponent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,7 +614,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
 				INFOPLIST_FILE = PackageComponentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = md.PackageComponentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -595,7 +633,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
 				INFOPLIST_FILE = PackageComponentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = md.PackageComponentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,7 +651,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
 				INFOPLIST_FILE = PackageComponentUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = md.PackageComponentUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,7 +669,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98298VBF9J;
 				INFOPLIST_FILE = PackageComponentUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = md.PackageComponentUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
