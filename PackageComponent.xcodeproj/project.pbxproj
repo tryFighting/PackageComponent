@@ -19,6 +19,7 @@
 		7B324B242126B06D003372C1 /* UIView+GestureCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B324B232126B06D003372C1 /* UIView+GestureCallBack.m */; };
 		7B4782D12136330900F9125F /* LoopQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4782D02136330900F9125F /* LoopQueue.m */; };
 		7B7158912137D47B00620E5F /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7158902137D47B00620E5F /* Algorithm.m */; };
+		7BEFAD1021AD281E00F81AC9 /* JLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFAD0F21AD281E00F81AC9 /* JLRouter.m */; };
 		C3581BD3A42B015BC4885084 /* libPods-PackageComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B92ACDC85B2A060BA82847 /* libPods-PackageComponent.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		7B4782D02136330900F9125F /* LoopQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopQueue.m; sourceTree = "<group>"; };
 		7B71588F2137D47B00620E5F /* Algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
 		7B7158902137D47B00620E5F /* Algorithm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
+		7BEFAD0E21AD281E00F81AC9 /* JLRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLRouter.h; sourceTree = "<group>"; };
+		7BEFAD0F21AD281E00F81AC9 /* JLRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLRouter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,7 @@
 				7B4782CE213632E400F9125F /* LoopQueue_循环队列 */,
 				7B324B212126B02A003372C1 /* GestureBack */,
 				7B324B1D21266D6A003372C1 /* SuccessOrEroorView */,
+				7BEFAD0D21AD27CF00F81AC9 /* JLRouter */,
 			);
 			path = "自定义错误视图";
 			sourceTree = "<group>";
@@ -206,6 +210,15 @@
 				7B7158902137D47B00620E5F /* Algorithm.m */,
 			);
 			path = "AI_算法";
+			sourceTree = "<group>";
+		};
+		7BEFAD0D21AD27CF00F81AC9 /* JLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				7BEFAD0E21AD281E00F81AC9 /* JLRouter.h */,
+				7BEFAD0F21AD281E00F81AC9 /* JLRouter.m */,
+			);
+			path = JLRouter;
 			sourceTree = "<group>";
 		};
 		FEC46E8E52B90514A1E8D48A /* Frameworks */ = {
@@ -404,6 +417,7 @@
 				7B324AFA21266CE5003372C1 /* main.m in Sources */,
 				7B324B242126B06D003372C1 /* UIView+GestureCallBack.m in Sources */,
 				7B4782D12136330900F9125F /* LoopQueue.m in Sources */,
+				7BEFAD1021AD281E00F81AC9 /* JLRouter.m in Sources */,
 				7B324AEC21266CE4003372C1 /* AppDelegate.m in Sources */,
 				7B324B2021266DF2003372C1 /* SuccessErrorView.m in Sources */,
 				7B7158912137D47B00620E5F /* Algorithm.m in Sources */,

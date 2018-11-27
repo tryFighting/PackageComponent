@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SuccessErrorView.h"
 #import "UIView+GestureCallBack.h"
+#import "JLRouter.h"
 @interface ViewController ()
 
 @end
@@ -19,9 +20,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
    //成功或失败视图的展示
-    [self successErrorView];
+    //[self successErrorView];
     //利用runtime手势点击
     //[self gestureTap];
+    
+    [JLRouter registerRouteURL:@"protocol://page/routerDetails/:id" handler:^(NSDictionary *routerParameters) {
+        //Route的URL与本次注册URL匹配时的回调
+        //routerParameters中包含了传递过来的所有参数
+        NSLog(@"para===%@",routerParameters);
+    }];
     
 }
 #pragma mark --手势点击事件
